@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  margin: 0;
+  margin: 5;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -44,13 +44,40 @@ body {
 <div class="topnav">
   <a class="active" href="Home.html">Home</a>
   <a href="About.html">About Us</a>
-  <a href="Contact.html">Contact</a>
-  
-</div>
+  <a href="Contact.html">Contact</a><br>
 
-<form>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname">
-  </form>
+  
+</div><br>
+
+
+<fieldset style="width: 10cm;";"<br>
+  <legend>Contact Information</legend><br>
+
+  <label>Name <input type="text" required placeholder="Your Fistname and Surename"></label><br><br>
+  <label>E-mail <input type="email" required placeholder="Your email adress"></label><br><br>
+  <label>Phone <input type="Phone number" required placeholder="Your Phone number"</label><br><br>
+  <label>Age <input type="number" min="1"max="100" step="1"</label>
+ </fieldset><br>
+ 
+<fieldset style="width: 10cm; height: 5cm;">
+  <label> Message</label>
+  
+<textarea name="Message" rows="10" cols="40";></textarea>
+</fieldset>
+<form method="post" enctype="multipart/form-data">
+  <div>
+    <label for="file">Choose file</label>
+    <input type="file" id="file" name="file" multiple>
+  </div>
+  <div><br>
+    <button>Send</button>
+  </div>
+ </form>
+
+
+
+
+  
+  
+
+
