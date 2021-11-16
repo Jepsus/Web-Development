@@ -33,22 +33,35 @@ body {margin:0;}
 
 <div class="icon-bar">
   <a class="active" href="index.html"><i class="fa fa-home"></i></a> 
-  <a href="form.html"fa fa-envelope"></i></a> 
+  <a href="form.html"><i class="fa fa-envelope"></i></a> 
 </div>
 
 </body>
 </html> 
 
-</body>
-</html>
 
-<body>
-   <h1>Welcome to Jepsus website</h1>
-  <p style=color:DodgerBlue;">Best Front End solution it Southern Finland</p>
-  <p>You can contact me via contact form</p>
-  <img src="https://www.andreafiori.net/img/social/og/coding-solutions.gif" alt="Coding Picture">
 
-</body>
-<body>
+<fieldset style="width: 10cm;";"<br>
+  <legend>Contact Information</legend><br>
+
+  <label>Name <input type="text" required placeholder="Your Fistname and Surename"></label><br><br>
+  <label>E-mail <input type="email" required placeholder="Your email adress"></label><br><br>
+  <label>Phone <input type="Phone number" required placeholder="Your Phone number"</label><br><br>
+  <label>Age <input type="number" min="1"max="100" step="1"</label>
+ </fieldset><br>
+ 
+<fieldset style="width: 10cm; height: 5cm;">
+  <label> Message</label>
   
-</body>
+<textarea name="Message" rows="10" cols="40";></textarea>
+</fieldset>
+<form method="post" enctype="multipart/form-data">
+  <div>
+    <label for="file">Choose file</label>
+    <input type="file" id="file" name="file" multiple>
+  </div>
+  <div><br>
+    <button>Send</button>
+  </div>
+ </form>
+
