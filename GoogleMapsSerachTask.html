@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MapTask</title>
+</head>
+<body>
+    <iframe id="mapFrame" src="https://www.google.com/maps?q=Mertapolku3Ruokolahti&output=embed" width="50%" height="300px"></iframe><br>
+        <input type="text" id="Address" size="10" placeholder="Address">
+        <input type="text" id="City" size="10" placeholder="City">
+        <button type="button" onclick="readUserInsert()" id="search">search</button>
+
+<script>
+    function readUserInsert(){
+        var Address = document.getElementById("Address").value;
+        var City = document.getElementById("City").value;
+        var newaddress = Address + City;
+    document.getElementById("mapFrame").src = "https://www.google.com/maps?q="+newaddress+"&output=embed";
+    console.log(newaddress);
+    
+
+    }
+
+</script>
+</body>
+</html>
