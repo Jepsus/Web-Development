@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<title>Loop Task </title>    
+</head>
+<body>
+
+<script>
+
+var n = n=parseInt(prompt("Number"));
+var oddSum = 0;
+var evenSum = 0;
+var i = 1; 
+while(i <= n){ 
+  if(i % 2 == 0){
+    evenSum += i;
+  } else {
+    oddSum += i;
+  }
+  i++; 
+}
+console.log(oddSum, evenSum);
+document.write("Sum of even" + " " + evenSum);
+document.write("Sum of odd" + " " + oddSum);
+
+</script>
+ </body>
+ </html>

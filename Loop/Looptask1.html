@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html lang="eng">
+ <head>
+ <meta charset="UTF-8">
+ <title>Loop Task </title>    
+ </head>
+ <body>
+  <h2> Loop Task 1</h2>
+  <input type="text" id="number" placeholder="Insert your number" onkeyup="calculate()">
+  <br/>
+               <h1 id="result"></h1>
+               <script>
+                function factorial(n){
+                    var result = n;
+                    if(n<0){
+                      return null;
+                    }
+                    if(n===1||n===0){
+                   return 1;
+                    } else {
+                    while(n>=2){
+                    result = result * (n-1); 
+                    n--;
+                   }
+                   return result;
+                   }
+                   }
+               function calculate(){
+                  var input = document.getElementById("number").value;
+                  if(!isNaN(input)){
+                   document.getElementById("result").innerHTML = factorial(parseInt(input, 10));
+                  } else {
+                   document.getElementById("result").innerHTML = "<b style='color: red;'>Input must be a number!</b>";
+                 
+                  {
+
+                  }
+
+                  }
+                  
+               }
+               </script>
+        </body>
+
+        
+
+    </html>
+
