@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="eng">
+    <head>
+    <meta charset="UTF-8">
+    <title>
+    Task Strings 1
+    </title>
+    </head>
+    </body>
+       
+    <h2>Find L letters</h2>
+    <input type="text" id="userInput" size="10" placeholder="Input your word">
+    <button type="button" onclick="findLletter()" id="equal">Find out</button>
+    <div id="result">Result:</div>
+    <h2>Find L Solution 2</h2>
+    <input type="text" id="userInput2" size="10" placeholder="Input your word">
+    <button type="button" onclick="checklletter2()" id="equal">Find out</button>
+    <div id="result2">Result:</div>
+   <script>
+
+    // SOlution 1
+    function findLletter(){
+    var userInput = String(document.getElementById("userInput").value);
+   
+    var lCounter = 0;
+    for(let i=0; i<userInput.length; i++){
+        if(userInput.charAt(i).toLowerCase()=="l")
+        lCounter++;
+
+    }
+
+    var retValue = userInput + "contain" + lCounter +" L charecters";
+    document.getElementById("result").innerHTML = retValue; 
+    }
+    // Solution 2
+    function checklletter2(){
+        var userInput = String(document.getElementById("userInput2").value);
+        var orglenght =userInput.length;
+        var removedLLetters = userInput.replace(/l/gi,"");
+        var newLenght = removedLLetters.length;
+
+        var retValue = userInput + "contain" + (orglenght-newLenght) + " L charecters";
+    document.getElementById("result2").innerHTML = retValue; 
+
+    }
+
+     </script>     
+    </body>
+        
+        
+
+    </html>

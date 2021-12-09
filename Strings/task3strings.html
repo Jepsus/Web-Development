@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="eng">
+    <head>
+    <meta charset="UTF-8">
+    <title>
+    Task Strings 1
+    </title>
+    </head>
+    </body>
+       
+    <h2>Palindrome</h2>
+    <input type="text" id="userInput" size="10" placeholder="Input your word">
+    <button type="button" onclick="validatePalin()" id="equal">Find out</button>
+    <div id="result">Result:</div>
+    <script>
+    function validatePalin(str) { 
+        var userInput = String(document.getElementById("userInput").value); 
+        var output = "";
+      for (let i = 0; i < userInput / 2; i++) {  
+       if (string[i] !== string[userInput - 1 - i]) {  
+                output ='It is not a palindrome';  
+            }  
+        }output = 'It is a palindrome';  
+        document.getElementById("result").innerHTML = output; 
+    }  
+      
+
+    
+</script>
+      
+  

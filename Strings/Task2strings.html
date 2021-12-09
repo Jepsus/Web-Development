@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="eng">
+    <head>
+    <meta charset="UTF-8">
+    <title>
+    Task Strings 1
+    </title>
+    </head>
+    </body>
+       
+    <h2>Vowel counter</h2>
+    <input type="text" id="userInput" size="10" placeholder="Input your word">
+    <button type="button" onclick="checkVowels()" id="equal">Find out</button>
+    <div id="result">Result:</div>
+    
+   <script>
+    function checkVowels(){
+    var vowels = "aeiouyåäö";
+    var userInput = String(document.getElementById("userInput").value);
+    var vowelCounter = 0;
+    for(let i=0; i<userInput.length; i++){
+        for(let j=0; j<vowels.length;j++){
+            if(userInput[i].toLowerCase()==vowels[j]){
+                vowelCounter++;
+                break;
+            }
+        }
+       
+    }
+    
+//Result to user
+    var retValue = userInput + "contain" + vowelCounter +" wovels";
+    document.getElementById("result").innerHTML = retValue; 
+    }
+     </script>     
+    </body>
+        
