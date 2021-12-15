@@ -6,24 +6,33 @@
         <script src="finaltask.js"></script>
 
     </head>
-    <H2>Cheking Henkilötunnus</H2>
+    <H2>Cheking Finnish Identity Code (Henkilötunnus)</H2>
     <input type="text" id="Birthday" placeholder="ddmmyy">
     <select name="operator" id="operator">
         <option value="-">-</option>
         <option value="+">+</option>
         <option value="A">A</option>
     </select>
-    <input type="text" id=letter placeholder="xxxx">
+    <input type="text" id="loppuosa" placeholder="xxxx">
     <button type="button" onclick="chechkingCorectness()">Check Me</button>
-    <H2>Cheking Henkilötunnus</H2>
-    <input type="text" id="Birthday" placeholder="ddmmyy">
+    <p id="result">Press Check Me!</p>
+    <p>Your sex is</p>
+    <p id="sex"></p>
+    <p>Your age is</p>
+    <p id="age"></p>
+    <button type="button" onclick="calculateAge()">year of Birthday leap or not ?</button>
+
+    <H2>Cheking Identity Code`s Last Sign</H2>
+    <input type="text" id="Birthday2" placeholder="ddmmyy">
     <select name="operator" id="operator">
         <option value="-">-</option>
         <option value="+">+</option>
         <option value="A">A</option>
     </select>
-    <input type="text" id=letter placeholder="xxxx">
-    <button type="button" onclick="chechkingCorectness()">Check Me</button>
+    
+    <input type="text" id=loppuosa2 placeholder="xxxx">
+    <button type="button" onclick="chekingLoppuosa()">Check </button>
+    <p id="result2">Press Check to continue!</p>
 
 
 
