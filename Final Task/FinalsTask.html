@@ -2,12 +2,12 @@
 <html lang="eng">
     <head>
         <meta charset=" UTF">
-        <title>Fianl Task</title>
+        <title>Finaltask Task</title>
         <script src="finaltask.js"></script>
 
     </head>
-    <H2>Cheking Finnish Identity Code (Henkilötunnus)</H2>
-    <input type="text" id="Birthday" placeholder="ddmmyy">
+    <body><H2>Cheking Finnish Identity Code (Henkilötunnus)</H2>
+    <input type="text" id="birthday" placeholder="ddmmyy">
     <select name="operator" id="operator">
         <option value="-">-</option>
         <option value="+">+</option>
@@ -20,20 +20,22 @@
     <p id="sex"></p>
     <p>Your age is</p>
     <p id="age"></p>
-    <button type="button" onclick="calculateAge()">year of Birthday leap or not ?</button>
+    <P id="checksign"></P>
+
 
     <H2>Cheking Identity Code`s Last Sign</H2>
-    <input type="text" id="Birthday2" placeholder="ddmmyy">
-    <select name="operator" id="operator">
+   
+    <input type="text" id="birthday2" placeholder="ddmmyy">
+    <select name="operator" id="operator2">
         <option value="-">-</option>
         <option value="+">+</option>
         <option value="A">A</option>
     </select>
     
     <input type="text" id=loppuosa2 placeholder="xxxx">
-    <button type="button" onclick="chekingLoppuosa()">Check </button>
+    <button type="button" onclick="lastSign()">Check</button>
     <p id="result2">Press Check to continue!</p>
 
 
-
+</body>
 </html>
